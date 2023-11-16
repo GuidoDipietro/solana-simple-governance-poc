@@ -1,0 +1,19 @@
+[toolchain]
+
+[features]
+seeds = true
+skip-lint = false
+
+[programs.localnet]
+governance = "BLk2YTz9yMXuYsbSCDatkEYVetHxsxM1WwKmWJAgsXZB"
+mock_program = "8aSet5fdFgc3HvpVH6uX9FTWALEoGDyvs3rmqWaKPsDR"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Localnet"
+wallet = "/home/gedos/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
